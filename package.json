@@ -1,0 +1,31 @@
+{
+  "name": "riot2ssr",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compile": "webpack --mode=production",
+	"hydrate": "webpack --mode=production --config=webpack2.config.js",
+	"riot": "riot ./src/my-component.riot -f cjs"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/core": "^7.15.8",
+    "@babel/preset-env": "^7.15.8",
+    "@riotjs/compiler": "^6.0.4",
+    "@riotjs/hydrate": "^6.0.0",
+    "@riotjs/ssr": "^7.1.1",
+    "express": "^4.17.1",
+    "riot": "^6.0.4",
+    "riotjs": "^1.0.4"
+  },
+  "devDependencies": {
+    "@riotjs/cli": "^6.0.5",
+    "@riotjs/webpack-loader": "^6.0.0",
+    "nodemon": "^2.0.14",
+    "webpack": "^5.60.0",
+    "webpack-cli": "^4.9.1"
+  }
+}
